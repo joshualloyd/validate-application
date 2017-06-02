@@ -9,13 +9,13 @@
 	<form action="" method="post">
 
 		<label for="first-name">First Name</label>
-		<input type="text" id="first-name" name="first-name">
+		<input required type="text" id="first-name" name="first-name">
 
 		<label for="middle-initial">Middle Initial</label>
 		<input type="text" id="middle-initial" name="middle-initial">
 
 		<label for="last-name">Last Name</label>
-		<input type="text" id="last-name" name="last-name">
+		<input required type="text" id="last-name" name="last-name">
 		
 		<label for="address">Address</label>
 		<input type="text" id="address" name="address">
@@ -59,13 +59,15 @@
 		<input type="text" id="comments" name="comments">
 
 		<label for="applicant-email">Applicant Email Address</label>
-		<input type="text" id="applicant-email" name="applicant-email">
+		<input type="email" id="applicant-email" name="applicant-email">
 
-		<label for="applicant-phone">Applicante Telephone Number</label>
-		<input type="text" id="applicant-phone" name="applicant-phone">
+		<label for="applicant-phone">Applicant Telephone Number format:(xxx-xxx-xxxx)</label>
+		<input type="tel" pattern="^\d{3}-\d{3}-\d{4}$" id="applicant-phone" name="applicant-phone">
 
 		<label for="applicant-linkedin">Applicant LinkedIn URL</label>
-		<input type="text" id="applicant-linkedin" name="applicant-linkedin">
+		<input type="url" id="applicant-linkedin" name="applicant-linkedin">
+
+		<input type="submit" name="submit">
 
 	</form>
 </body>

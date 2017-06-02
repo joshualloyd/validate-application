@@ -1,0 +1,30 @@
+
+/* Previous styling */
+input {
+	display: block;
+	line-height: 1.5em;
+}
+
+input[type="radio"] {
+	display: inline;
+}
+
+label {
+	display: block;
+	line-height: 1.5em;
+}
+/* /previous styling */
+
+/* validation styling */
+input[required]:invalid, input[type="url"]:invalid, input[type="tel"]:invalid, input[type="email"]:invalid {
+	background-color: red;
+}
+input[required]:valid, input[type="url"]:valid, input[type="tel"]:valid, input[type="email"]:valid {
+	background-color: green;
+}
+
+input[required]:focus, input[type="url"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
+	background-color: white;
+}
+
+/* /validation styling */
